@@ -84,28 +84,34 @@
                     <h2 class="section-heading">Projects</h2>
                 </div>
             </div>
-            <div class="row text-center">	
-                <div class="col-sm-4">
-                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
-                    </span>
+            <div class="row text-center">
+                <div class="col-sm-4 portfolio-item">
+					<a href="#inflectionModal" class="portfolio-link" data-toggle="modal">
+						<span class="fa-stack fa-4x project-link">
+							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+							<i class="fa fa-code-fork fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
                     <h4 class="service-heading">Inflection</h4>
                     <p class="text-muted">Extends the visitor pattern with class views to enable highly reusable algorithms.</p>
                 </div>
-                <div class="col-sm-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
-                    </span>
+                <div class="col-sm-4 portfolio-item">
+					<a href="#wrapModal" class="portfolio-link" data-toggle="modal">
+						<span class="fa-stack fa-4x project-link">
+							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+							<i class="fa fa-space-shuttle fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
                     <h4 class="service-heading">Warp</h4>
                     <p class="text-muted">Provides long-running processes in Java via database backed persistent threads.</p>
                 </div>
                 <div class="col-sm-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-magnet fa-stack-1x fa-inverse"></i>
-                    </span>
+					<a href="#deflectorModal" class="portfolio-link" data-toggle="modal">
+						<span class="fa-stack fa-4x project-link">
+							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+							<i class="fa fa-magnet fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
                     <h4 class="service-heading">Deflector</h4>
                     <p class="text-muted">Creates wrapper APIs that transform Java checked exceptions into runtime exceptions.</p>
                 </div>
@@ -126,8 +132,8 @@
                     	Java programming language that facilitate building and maintaining complex systems.
                     </p>
                     <p class="text-muted">
-                    	The development of ideas began at the ETH in Zurich, Switzerland and are currently
-                    	under further development at the Zurich University of Applied Sciences in Winterthur.
+                    	These ideas began as a research project at the ETH Zurich and are currently
+                    	under further development at the ZHAW (Zurich University of Applied Sciences in Winterthur).
                     </p>
                 </div>
 	            <div class="col-sm-2 col-xs-0">
@@ -140,10 +146,88 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    Artwork by <a href="http://symbolika.com" target="_blank">Symbolika</a>
+                </div>
+                <div class="col-sm-12">
                     <span class="copyright">Copyright &copy; Liquid Mind 2014</span>
                 </div>
         </div>
     </footer>
+	
+    <!-- Inflection Modal -->
+    <div class="portfolio-modal modal fade" id="inflectionModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Inflection</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <a class="btn btn-primary" href="https://github.com/liquid-mind/inflection" role="button" target="_blank">Goto Project Homepage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- Warp Modal -->
+    <div class="portfolio-modal modal fade" id="wrapModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Warp</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <a class="btn btn-primary" href="https://github.com/liquid-mind/warp" role="button" target="_blank">Goto Project Homepage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- Deflector Modal -->
+    <div class="portfolio-modal modal fade" id="deflectorModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Deflector</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <a class="btn btn-primary" href="https://github.com/liquid-mind/deflector" role="button" target="_blank">Goto Project Homepage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

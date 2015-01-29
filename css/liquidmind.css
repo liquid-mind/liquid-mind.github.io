@@ -868,3 +868,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #9FB7F8;
 }
+
+.project-link:hover .fa-circle {
+	color: #D6E1FF;
+}
