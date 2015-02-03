@@ -173,7 +173,7 @@
                             <p>
                             	The Inflection API reduces the amount of boilerplate code by (virtually) extending
                             	the Java type system with so-called "class views". Applications include reusable
-                            	implementions for base functions, such as hashcode(), equals(), toString() and
+                            	implementions of base functions, such as hashcode(), equals(), toString() and
                             	clone() as well as more advanced functions, such as JPA persistence and JSON serialization.
                             </p>
                             <p>
@@ -216,7 +216,7 @@
                             	The Warp persistent process engine turns normal Java threads into database
                             	backed persistent threads. These persistent processes allow for seamless
                             	integration of slow agents---typically human beings performing manual process
-                            	steps---into an overreaching process.
+                            	steps---into an orchestrating process.
                              </p>
                             <img src="img/Warp Example.jpg"></a>
                              <p>
@@ -254,7 +254,7 @@
                             <h2>Deflector</h2>
                             <p>
                             	Turns checked exceptions into runtime exceptions by generating wrapper classes
-                            	for arbitrary APIs in java. For example:
+                            	for arbitrary APIs in Java. For example:
 							</p>
 	 						<pre class="prettyprint lmcode">
 // JSE Class
@@ -270,11 +270,12 @@ public class __InputStream {
 }</pre>
 
                             <p>
-                            	This allows you to invoke __InputStream.read() without needing to handle a checked exception.
-                            	As a result, you will have far fewer exception handlers in your code.
+                            	__IOException is a runtime exception that wraps IOException, thus allowing you to invoke
+                            	__InputStream.read() without the need for checked exception handling. This drastically
+                            	reduces the number of exception handlers in your code.
                             </p>
                             <p>
-	                            To understand why you might want to do these, take a look at these criticisms of Java's checked
+	                            To understand why you might want to do this, take a look at these criticisms of Java's checked
 	                            exception mechanism:
                             </p>
                             <p>
