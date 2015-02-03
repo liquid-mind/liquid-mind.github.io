@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/liquidmind.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet" >
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -165,17 +166,30 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-md-8 col-md-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Inflection</h2>
                             <p>
-                            	The Inflection API reduces the amount of boilerplate code by (virtually) extending the Java type system with so-called "class views".
+                            	The Inflection API reduces the amount of boilerplate code by (virtually) extending
+                            	the Java type system with so-called "class views". Applications include reusable
+                            	implementions for base functions, such as hashcode(), equals(), toString() and
+                            	clone() as well as more advanced functions, such as JPA persistence and JSON serialization.
                             </p>
                             <p>
-                                Applications include reusable implementions for base functions, such as hashcode(), equals(), toString() and clone() as well as more advanced functions, such as JPA persistence and JSON serialization.
+                             	For example, given a Person class it is possible to define the class views
+                             	PersonSimple and PersonComplex as follows:
                             </p>
-                            <a class="btn btn-primary" href="https://github.com/liquid-mind/inflection" role="button" target="_blank">Goto Project Homepage</a>
+                            <img src="img/Inflection Example.jpg"></a>
+                            <p>
+                                Then, given a Person p we can apply an algorithm to display p as either PersonSimple or PersonComplex:
+                            </p>
+                            <img src="img/Inflection Example 2.jpg"></a>
+                            <p>
+                                Thus, Inflection provides "virtual" views of a class model as well as operations on
+                                those views. Click on the link below to find out more.
+                            </p>
+                             <a class="btn btn-primary" href="https://github.com/liquid-mind/inflection" role="button" target="_blank">Goto Project Homepage</a>
                         </div>
                     </div>
                 </div>
@@ -223,8 +237,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Deflector</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                            	Turns checked exceptions into runtime exceptions by generating wrapper classes
+                            	for arbitrary APIs in java. One example from the java standard edition API is:
+							</p>
+
                             <a class="btn btn-primary" href="https://github.com/liquid-mind/deflector" role="button" target="_blank">Goto Project Homepage</a>
                         </div>
                     </div>
@@ -249,6 +266,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/liquidmind.js"></script>
+	<script src="js/prettify.js"></script>
+
 
 </body>
 
