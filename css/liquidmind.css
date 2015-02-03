@@ -4,6 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
  
+pre.lmcode {
+	padding: 10px 10px 10px 10px !important;
+    line-height: 1;
+    text-align: left;
+}
+ 
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;

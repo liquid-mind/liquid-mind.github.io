@@ -187,7 +187,7 @@
                             <img src="img/Inflection Example 2.jpg"></a>
                             <p>
                                 Thus, Inflection provides "virtual" views of a class model as well as operations on
-                                those views. Click on the link below to find out more.
+                                those views. Click on the link below to try it out or to found out more.
                             </p>
                              <a class="btn btn-primary" href="https://github.com/liquid-mind/inflection" role="button" target="_blank">Goto Project Homepage</a>
                         </div>
@@ -208,12 +208,27 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                     <div class="col-md-8 col-md-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Warp</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                            	The Warp persistent process engine turns normal Java threads into database
+                            	backed persistent threads. These persistent processes allow for seamless
+                            	integration of slow agents---typically human beings performing manual process
+                            	steps---into an overreaching process.
+                             </p>
+                            <img src="img/Warp Example.jpg"></a>
+                             <p>
+                             	In the example above, authorize() is a normal Java method that may represent
+                             	either a slow agent (human) or fast agent (computer) executing in an arbitrary
+                             	amount of time.
+                             </p>
+                             <p>
+                             	Other features include a virtually unlimited number of simultaneous processes,
+                             	the ability to survive JVM restarts/crashes and load balancing across multiple JVMs.
+                             	To find out more or to give it a try, click on the link below.
+                             </p>
                             <a class="btn btn-primary" href="https://github.com/liquid-mind/warp" role="button" target="_blank">Goto Project Homepage</a>
                         </div>
                     </div>
@@ -233,19 +248,46 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-md-8 col-md-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Deflector</h2>
                             <p>
                             	Turns checked exceptions into runtime exceptions by generating wrapper classes
-                            	for arbitrary APIs in java. One example from the java standard edition API is:
+                            	for arbitrary APIs in java. For example:
 							</p>
+	 						<pre class="prettyprint lmcode">
+// JSE Class
+public class InputStream {
+	public abstract int read() throws IOException;
+	...
+}
 
-                            <a class="btn btn-primary" href="https://github.com/liquid-mind/deflector" role="button" target="_blank">Goto Project Homepage</a>
-                        </div>
-                    </div>
-                </div>
+// Deflector wrapper class
+public class __InputStream {
+	public abstract int read( InputStream is ) throws __IOException;
+	...
+}</pre>
+
+                            <p>
+                            	This allows you to invoke __InputStream.read() without needing to handle a checked exception.
+                            	As a result, you will have far fewer exception handlers in your code.
+                            </p>
+                            <p>
+	                            To understand why you might want to do these, take a look at these criticisms of Java's checked
+	                            exception mechanism:
+                            </p>
+                            <p>
+                            	<a href="http://www.mindview.net/Etc/Discussions/CheckedExceptions" target="_blank">Does Java need Checked Exceptions?</a><br/>
+                            	<a href="http://www.artima.com/intv/handcuffs.html" target="_blank">The Trouble with Checked Exceptions</a>
+                            </p>
+                            <p>
+                            	For more information or to try out deflector, click the link below.
+                            </p>
+						</div>
+					</div>
+	                <a class="btn btn-primary" href="https://github.com/liquid-mind/deflector" role="button" target="_blank">Goto Project Homepage</a>
+				</div>
             </div>
         </div>
     </div>
@@ -267,8 +309,21 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/liquidmind.js"></script>
 	<script src="js/prettify.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
-
+	<script type="text/javascript">
+		
+	(function(jQuery){
+		
+	  jQuery( document ).ready( function() {
+			
+	    prettyPrint();
+			
+	  } );
+	 
+	}(jQuery))
+		
+	</script>
 </body>
 
 </html>
