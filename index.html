@@ -182,14 +182,13 @@
                             </p>
                             <img src="img/Inflection Example.jpg"></a>
                             <p>
-                            	Instances of the original classes can then be cast to views like this:
+                            	Instances of Person can then be cast to PersonSimple and PersonComplex like this:
                             </p>
 				<pre class="prettyprint lmcode">
 Person p1 = new Person();
 p1.setFirstName( "John" );
 
-// p1, p2 and p3 all point to the same object,
-// but have different structures.
+// p1, p2 and p3 all point to the same object, but have different structures.
 PersonSimple p2 = Inflection.cast( PersonSimple.class, p1 );
 p2.getFirstName();   // Result is "John".
 p2.setFirstName( "Frank" );
