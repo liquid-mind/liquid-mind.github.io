@@ -172,9 +172,9 @@
                             <h2>Inflection</h2>
                             <p>
                             	The Inflection API reduces the amount of boilerplate code by (virtually) extending
-                            	the Java type system with so-called "class views". Applications include reusable
-                            	implementions of base functions, such as hashcode(), equals(), toString() and
-                            	clone() as well as more advanced functions, such as JPA persistence and JSON serialization.
+                            	the Java type system with so-called "class views". Key appliations include a serialization
+                            	(JSON) and persistence (JPA/Hibernate) in web applications as well as interface
+                            	adapters for technical interfaces.
                             </p>
                             <p>
                              	For example, given a Person class it is possible to define the class views
@@ -182,12 +182,23 @@
                             </p>
                             <img src="img/Inflection Example.jpg"></a>
                             <p>
-                                Then, given a Person p we can apply an algorithm to display p as either PersonSimple or PersonComplex:
+                            	Instances of the original classes can then be cast to views like this:
                             </p>
-                            <img src="img/Inflection Example 2.jpg"></a>
+				<pre class="prettyprint lmcode">
+Person p1 = new Person();
+p1.setFirstName( "John" );
+
+// p1, p2 and p3 all point to the same object,
+// but have different structures.
+PersonSimple p2 = Inflection.cast( PersonSimple.class, p1 );
+p2.getFirstName();   // Result is "John".
+p2.setFirstName( "Frank" );
+PersonComplex p3 = Inflection.cast( PersonComplex.class, p2 );
+p2.getFirstName();   // Result is "Frank".
+p1.getFirstName();   // Result is "Frank".
+				</pre>
                             <p>
-                                Thus, Inflection provides "virtual" views of a class model as well as operations on
-                                those views. Click on the link below to try it out or to found out more.
+                                Click on the link below to try it out or to found out more.
                             </p>
                              <a class="btn btn-primary" href="https://github.com/liquid-mind/inflection" role="button" target="_blank">Goto Project Homepage</a>
                         </div>
